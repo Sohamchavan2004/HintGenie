@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "HintGenie",
+    "version": "1.0",
+
+    "permissions": ["scripting", "activeTab", "storage"],
+
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon": "ai-assistant.png"
+    },
+
+    "content_scripts":[
+        {
+            "matches":["https://leetcode.com/problems/*"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "background" :{
+        "service_worker": "background.js"
+    },
+
+    "options_page": "option.html",
+
+    "host_permissions": ["https://leetcode.com/*"]
+
+}

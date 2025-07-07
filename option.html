@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension Options</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            max-width: 500px;
+            background-color: #f1f3f4;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 8px 14px;
+            font-size: 14px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .success-message {
+            color: green;
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HintGenie Setting</h1>
+    <div class="form-group">
+        <label for="api-key">Gemini API Key</label>
+        <input type="text" id="api-key" placeholder="Enter your Gemini Api Key" />
+
+        <p>
+            You can get an API key form
+            <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a>
+        </p>
+        
+    </div>
+
+    <button id="save-button">Save Setting</button>
+    <p id="success-message" class="success-message">
+        Setting saved successfully!
+    </p>
+    <script src="option.js"></script>
+
+
+</body>
+</html>
